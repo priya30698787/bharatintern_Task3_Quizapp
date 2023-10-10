@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/img_4"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="391dp"
+        android:layout_height="133dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="40dp"
+        android:text="Total Question"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/choiceslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="My First Question"
+
+            android:textAlignment="center"
+            android:textColor="@color/teal_200"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/AnsA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:text="Ans A"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_margin="8dp"
+            />
+
+        <Button
+            android:id="@+id/AnsB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ans B"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/AnsC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ans C"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_margin="8dp" />
+
+        <Button
+            android:id="@+id/AnsD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ans D"
+            android:textColor="@color/white"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="110dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="submit"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
